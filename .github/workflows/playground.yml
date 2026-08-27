@@ -29,6 +29,10 @@ env:
   UPLOAD_ARTIFACT: "${{ inputs.upload-artifact }}"
   SIGN_BASE_URL: "${{ secrets.SIGN_BASE_URL }}"
 
+
+permissions:
+  contents: write
+  actions: write
 jobs:
   build-for-macOS:
     name: ${{ matrix.job.target }}
