@@ -28,7 +28,8 @@ on:
             default: 'Windows10'
 
 
-permissions:/n  actions: write
+permissions:
+  actions: write
 env:
   project_path: WindowInjection/WindowInjection.vcxproj
 
