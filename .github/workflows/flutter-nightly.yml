@@ -1,9 +1,11 @@
 name: Flutter Nightly Build
 
 on:
-  schedule:
-    # schedule build every night
-    - cron: "0 0 * * *"
+  # 定时编译已停用（2026-11-05）：改为按需手动打 tag 触发 Flutter Tag Build。
+  # 需要恢复时，取消下面两行注释即可。
+  # schedule:
+  #   # schedule build every night
+  #   - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
